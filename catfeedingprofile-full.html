@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cat Feeding Plan</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #e67e22;
+      --purple: #9b59b6;
+      --blue: #2980b9;
+      --orange: #e67e22;
+      --bg: #fdfdfd;
+      --light: #fafafa;
+      --border: #ddd;
+      --text: #333;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 { font-weight: 400; }
+    nav { margin-top: .5rem; }
+    nav a {
+      color: white;
+      margin-right: 1rem;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    nav a:hover { text-decoration: underline; }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: .3rem;
+      margin-top: 2rem;
+      color: var(--primary);
+    }
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      margin: 1.5rem 0;
+      padding: 1rem 1.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      padding: .6rem;
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+    th {
+      background: var(--light);
+      font-weight: 700;
+    }
+    tr:nth-child(even) { background: #f9f9f9; }
+    tr:hover { background: #fffecb; }
+    .highlight td {
+      background: #fff3cd !important;
+      font-weight: 700;
+    }
+    .cat-Nami   { color: var(--purple); font-weight: 700; }
+    .cat-Maya   { color: var(--blue);   font-weight: 700; }
+    .cat-Cinder { color: var(--orange); font-weight: 700; }
+    .note-ok      { color: #155724; background: #d4edda; padding: .2rem .4rem; border-radius: 4px; }
+    .note-warning { color: #856404; background: #fff3cd; padding: .2rem .4rem; border-radius: 4px; }
+    sup, sub { font-size: .75em; }
+    hr.section { border: none; border-top: 3px dashed var(--border); margin: 2rem 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🐾 Cat Feeding Plan</h1>
+  <nav>
+    <a href="#profiles">Profiles</a>
+    <a href="#plan1">Plan 1</a>
+    <a href="#plan2">Plan 2</a>
+    <a href="#plan3">Plan 3</a>
+    <a href="#plan4">Plan 4</a>
+    <a href="#summary">Summary</a>
+  </nav>
+</header>
+
+<div class="container">
+  <section id="profiles">
+    <h2>Cat Profiles</h2>
+    <table>
+      <tr><th>Cat</th><th>Age</th><th>Weight (kg)</th><th>Activity</th></tr>
+      <tr><td class="cat-Nami">Nami (DSH)</td><td>6 yrs</td><td>5.5</td><td>Low</td></tr>
+      <tr><td class="cat-Maya">Maya (Ragdoll)</td><td>10 yrs</td><td>4.5</td><td>Low</td></tr>
+      <tr><td class="cat-Cinder">Cinder (Maine Coon)</td><td>6 yrs</td><td>7.0</td><td>Low</td></tr>
+    </table>
+  </section>
+
+  <hr class="section">
+
+  <section id="plan1">
+    <h2>🍽️ Feeding Plan 1</h2>
+    <div class="card">
+      <h3>Purina ONE Dry + Fancy Feast Wet</h3>
+      <h4>🐱 <span class="cat-Nami">Nami</span> (~220 kcal)</h4>
+      <table>
+        <tr><th>Meal</th><th>Type</th><th>Amt</th><th>kcal</th><th>Cups (dry)</th></tr>
+        <tr><td>Morning</td><td>Dry</td><td>40 g</td><td>148</td><td>~⅜</td></tr>
+        <tr><td>Evening</td><td>Wet</td><td>90 g</td><td>72</td><td>—</td></tr>
+        <tr class="highlight"><td colspan="3">Total</td><td>220</td><td>—</td></tr>
+      </table>
+      <h4>🐱 <span class="cat-Maya">Maya</span> (~180 kcal)</h4>
+      <table>
+        <tr><th>Meal</th><th>Type</th><th>Amt</th><th>kcal</th><th>Cups</th></tr>
+        <tr><td>Morning</td><td>Dry</td><td>30 g</td><td>111</td><td>~¼</td></tr>
+        <tr><td>Evening</td><td>Wet</td><td>85 g</td><td>69</td><td>—</td></tr>
+        <tr class="highlight"><td colspan="3">Total</td><td>180</td><td>—</td></tr>
+      </table>
+      <h4>🐱 <span class="cat-Cinder">Cinder</span> (~400 kcal)</h4>
+      <table>
+        <tr><th>Meal</th><th>Type</th><th>Amt</th><th>kcal</th><th>Cups</th></tr>
+        <tr><td>Morning</td><td>Dry</td><td>60 g</td><td>222</td><td>~½</td></tr>
+        <tr><td>Evening</td><td>Wet</td><td>180 g</td><td>146</td><td>—</td></tr>
+        <tr><td>Evening</td><td>Dry</td><td>10 g</td><td>37</td><td>~¹⁄₁₀</td></tr>
+        <tr class="highlight"><td colspan="3">Total</td><td>405</td><td>—</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <hr class="section">
+
+  <section id="plan2">
+    <h2>🍽️ Feeding Plan 2</h2>
+    <div class="card">
+      <h3>Whiskas Furball Dry + Fancy Feast Wet</h3>
+      <h4>🐱 <span class="cat-Nami">Nami</span> (~220 kcal)</h4>
+      <table>
+        <tr><th>Meal</th><th>Type</th><th>Amt</th><th>kcal</th><th>Cups</th></tr>
+        <tr><td>Morning</td><td>Dry</td><td>40 g</td><td>136</td><td>~⅓</td></tr>
+        <tr><td>Evening</td><td>Wet</td><td>85 g</td><td>74</td><td>—</td></tr>
+        <tr class="highlight"><td colspan="3">Total</td><td>210</td><td>—</td></tr>
+      </table>
+      <h4>🐱 <span class="cat-Maya">Maya</span> (~180 kcal)</h4>
+      <table>
+        <tr><th>Meal</th><th>Type</th><th>Amt</th><th>kcal</th><th>Cups</th></tr>
+        <tr><td>Morning</td><td>Dry</td><td>30 g</td><td>102</td><td>~¼</td></tr>
+        <tr><td>Evening</td><td>Wet</td><td>80 g</td><td>70</td><td>—</td></tr>
+        <tr class="highlight"><td colspan="3">Total</td><td>172</td><td>—</td></tr>
+      </table>
+      <h4>🐱 <span class="cat-Cinder">Cinder</span> (~400 kcal)</h4>
+      <table>
+        <tr><th>Meal</th><th>Type</th><th>Amt</th><th>kcal</th><th>Cups</th></tr>
+        <tr><td>Morning</td><td>Dry</td><td>60 g</td><td>204</td><td>~½</td></tr>
+        <tr><td>Evening</td><td>Wet</td><td>200 g</td><td>170</td><td>—</td></tr>
+        <tr><td>Evening</td><td>Dry</td><td>10 g</td><td>34</td><td>~¹⁄₁₁</td></tr>
+        <tr class="highlight"><td colspan="3">Total</td><td>408</td><td>—</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <hr class="section">
+
+  <section id="plan3">
+    <h2>🍽️ Feeding Plan 3</h2>
+    <div class="card">
+      <h3>Whiskas Dry + Whiskas Wet (400 g/day shared)</h3>
+      <p><strong>Total wet shared: 400 g</strong></p>
+      <h4>🐱 <span class="cat-Nami">Nami</span> (~220 kcal)</h4>
+      <table>
+        <tr><th>Meal</th><th>Type</th><th>Amt</th><th>kcal</th><th>Cups</th></tr>
+        <tr><td>Morning</td><td>Dry</td><td>40 g</td><td>136</td><td>~⅓</td></tr>
+        <tr><td>Evening</td><td>Wet</td><td>100 g</td><td>80</td><td>—</td></tr>
+        <tr class="highlight"><td colspan="3">Total</td><td>216</td><td>—</td></tr>
+      </table>
+      <h4>🐱 <span class="cat-Maya">Maya</span> (~180 kcal)</h4>
+      <table>
+        <tr><th>Meal</th><th>Type</th><th>Amt</th><th>kcal</th><th>Cups</th></tr>
+        <tr><td>Morning</td><td>Dry</td><td>30 g</td><td>102</td><td>~¼</td></tr>
+        <tr><td>Evening</td><td>Wet</td><td>100 g</td><td>80</td><td>—</td></tr>
+        <tr class="highlight"><td colspan="3">Total</td><td>182</td><td>—</td></tr>
+      </table>
+      <h4>🐱 <span class="cat-Cinder">Cinder</span> (~400 kcal)</h4>
+      <table>
+        <tr><th>Meal</th><th>Type</th><th>Amt</th><th>kcal</th><th>Cups</th></tr>
+        <tr><td>Morning</td><td>Dry</td><td>50 g</td><td>170</td><td>~½</td></tr>
+        <tr><td>Evening</td><td>Wet</td><td>200 g</td><td>160</td><td>—</td></tr>
+        <tr><td>Evening</td><td>Dry</td><td>20 g</td><td>68</td><td>~⅕</td></tr>
+        <tr class="highlight"><td colspan="3">Total</td><td>398</td><td>—</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <hr class="section">
+
+  <section id="plan4">
+    <h2>🍽️ Feeding Plan 4</h2>
+    <div class="card">
+      <h3>Purina ONE Dry + Whiskas Wet (400 g/day shared)</h3>
+      <h4>🐱 <span class="cat-Nami">Nami</span> (~220 kcal)</h4>
+      <table>
+        <tr><th>Meal</th><th>Type</th><th>Amt</th><th>kcal</th><th>Cups</th></tr>
+        <tr><td>Morning</td><td>Dry</td><td>40 g</td><td>148</td><td>~⅜</td></tr>
+        <tr><td>Evening</td><td>Wet</td><td>90 g</td><td>72</td><td>—</td></tr>
+        <tr class="highlight"><td colspan="3">Total</td><td>220</td><td>—</td></tr>
+      </table>
+      <h4>🐱 <span class="cat-Maya">Maya</span> (~180 kcal)</h4>
+      <table>
+        <tr><th>Meal</th><th>Type</th><th>Amt</th><th>kcal</th><th>Cups</th></tr>
+        <tr><td>Morning</td><td>Dry</td><td>30 g</td><td>111</td><td>~¼</td></tr>
+        <tr><td>Evening</td><td>Wet</td><td>90 g</td><td>72</td><td>—</td></tr>
+        <tr class="highlight"><td colspan="3">Total</td><td>183</td><td>—</td></tr>
+      </table>
+      <h4>🐱 <span class="cat-Cinder">Cinder</span> (~400 kcal)</h4>
+      <table>
+        <tr><th>Meal</th><th>Type</th><th>Amt</th><th>kcal</th><th>Cups</th></tr>
+        <tr><td>Morning</td><td>Dry</td><td>60 g</td><td>222</td><td>~½</td></tr>
+        <tr><td>Evening</td><td>Wet</td><td>220 g</td><td>176</td
