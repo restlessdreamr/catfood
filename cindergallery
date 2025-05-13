@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CatFood</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #e67e22;
+      --purple: #9b59b6;
+      --blue: #2980b9;
+      --orange: #e67e22;
+      --bg: #fdfdfd;
+      --light: #fafafa;
+      --border: #ddd;
+      --text: #333;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1rem;
+      position: sticky; top: 0; z-index: 100;
+    }
+    header h1 { font-weight: 400; }
+    nav { margin-top: .5rem; }
+    nav a {
+      color: white; margin-right: 1rem;
+      text-decoration: none; font-weight: 700;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: .3rem;
+      margin-top: 2rem;
+      color: var(--primary);
+    }
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin: 1.5rem 0;
+    }
+    .gallery img {
+      max-width: 48%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .gallery p {
+      text-align: center;
+      font-style: italic;
+      margin-top: .5rem;
+      color: #555;
+    }
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      margin: 1.5rem 0;
+      padding: 1rem 1.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      padding: .6rem;
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+    th {
+      background: var(--light);
+      font-weight: 700;
+    }
+    tr:nth-child(even) { background: #f9f9f9; }
+    tr:hover { background: #fffecb; }
+    .highlight td {
+      background: #fff3cd !important;
+      font-weight: 700;
+    }
+    .cat-Nami   { color: var(--purple); font-weight: 700; }
+    .cat-Maya   { color: var(--blue);   font-weight: 700; }
+    .cat-Cinder { color: var(--orange); font-weight: 700; }
+    .note-ok      { color: #155724; background: #d4edda; padding: .2rem .4rem; border-radius: 4px; }
+    .note-warning { color: #856404; background: #fff3cd; padding: .2rem .4rem; border-radius: 4px; }
+    sup, sub { font-size: .75em; }
+    hr.section { border: none; border-top: 3px dashed var(--border); margin: 2rem 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🐾 Cat Feeding Plan</h1>
+  <nav>
+    <a href="#cinder">Meet Cinder</a>
+    <a href="#profiles">Profiles</a>
+    <a href="#plan1">Plan 1</a>
+    <a href="#plan2">Plan 2</a>
+    <a href="#plan3">Plan 3</a>
+    <a href="#plan4">Plan 4</a>
+    <a href="#summary">Summary</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <!-- Cinder Gallery -->
+  <section id="cinder">
+    <h2>Meet Cinder</h2>
+    <div class="gallery">
+      <figure>
+        <img src="image%20(9).png" alt="Cinder sitting proudly">
+        <figcaption>Cinder, the gentle giant, posing like royalty.</figcaption>
+      </figure>
+      <figure>
+        <img src="20250224_103139.jpg" alt="Cinder lounging happily">
+        <figcaption>The baby boy, all snuggled up.</figcaption>
+      </figure>
+    </div>
+    <p>Ruler of laps and hearts alike!</p>
+  </section>
+
+  <hr class="section">
+
+  <!-- Profiles -->
+  <section id="profiles">
+    <h2>Cat Profiles</h2>
+    <table>
+      <tr><th>Cat</th><th>Age</th><th>Weight (kg)</th><th>Activity</th></tr>
+      <tr><td class="cat-Nami">Nami (DSH)</td><td>6 yrs</td><td>5.5</td><td>Low</td></tr>
+      <tr><td class="cat-Maya">Maya (Ragdoll)</td><td>10 yrs</td><td>4.5</td><td>Low</td></tr>
+      <tr><td class="cat-Cinder">Cinder (Maine Coon)</td><td>6 yrs</td><td>7.0</td><td>Low</td></tr>
+    </table>
+  </section>
+
+  <hr class="section">
+
+  <!-- Feeding Plans & Summary -->
+  <!-- ... insert Plans 1–4 and Summary here (as in the previous full file) ... -->
+
+</div>
+
+</body>
+</html>
